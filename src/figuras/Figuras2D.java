@@ -14,4 +14,20 @@ public class Figuras2D{
         return color;
     }
 
+    public void setColor(String color){
+        this.color=color;
+    }
+
+    public int[] getPosicion(){
+        return posicion;
+    }
+
+    public void setPosicion(int[] posicion){
+        this.posicion=posicion;
+    }
+
+    @Override
+    public String toString(){
+        return "Figura [posicion("+posicion[0]+","+posicion[1]+") \ncolor="+color+"]";
+    }
 }
