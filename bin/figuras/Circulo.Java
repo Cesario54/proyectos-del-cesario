@@ -22,6 +22,6 @@ public class Circulo extends Figuras2D{
     @Override
     public String toString(){
         String a =super.toString;
-        return "Circulo [Radio="+radio+" ,Area="+area+"]";
+        return a + ": Circulo [Radio="+radio+" ,Area="+area+"]";
     }
 }
