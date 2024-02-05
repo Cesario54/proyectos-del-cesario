@@ -7,7 +7,7 @@ public class Circulo extends Figuras2D{
         this.radio=radio;
     }
 
-    public int area(){
+    private int area(){
         return (3.1416*(radio*radio));
     }
 
