@@ -1,4 +1,4 @@
-package figuras;
+package programasParaEntregar.figuras;
 
 public class Figuras2D{
     int[] posicion=new int[2];

@@ -1,7 +1,7 @@
 package calculadora.infixToPostfix;
 
 public class Funciones {
-    public boolean funciones(String exprecion){
+    public static boolean funciones(String exprecion){
         boolean vandera=false;
         if(trigonometricas(exprecion))
             vandera=true;
@@ -30,9 +30,9 @@ public class Funciones {
 
     private boolean logaritmicas(String exprecion){
         boolean vandera=false;
-        if(exprecion=="log")
+        if(exprecion.charAt(0)=='l'&&exprecion.charAt(1)=='o'&&exprecion.charAt(2)=='g')
             vandera=true;
-        else if(exprecion=="in")
+        else if(exprecion.charAt(0)=='l'&&exprecion.charAt(1)=='n')
             vandera=true;
         return vandera;
     }

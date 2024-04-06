@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import calculadora.pila.*;
 
 public class InfixToPostfix {
-    Funciones a=new Funciones();
     Stack operadores=new Stack();
     ArrayList<String> postfix=new ArrayList<>();
 
@@ -25,7 +24,7 @@ public class InfixToPostfix {
             }else if(ecuacionIn[i].charAt(0)=='^'||ecuacionIn[i].charAt(0)=='√'){
                 pop(3, i);
                 operadores.push(ecuacionIn[i], 3);
-            }else if(a.funciones(ecuacionIn[i])){
+            }else if(funciones(ecuacionIn[i])){
                 operadores.push(ecuacionIn[i], 4);
             }else if(ecuacionIn[i].charAt(0)==')'){
                 while(operadores.pip()!=0){
